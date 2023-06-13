@@ -165,10 +165,10 @@ TextureImporter:
         x: 112
         y: 0
         width: 32
-        height: 6
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -183,13 +183,13 @@ TextureImporter:
       name: HealthBar
       rect:
         serializedVersion: 2
-        x: 112
-        y: 9
-        width: 32
-        height: 6
+        x: 114
+        y: 7
+        width: 28
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 2, z: 2, w: 2}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -587,7 +587,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,6 +595,132 @@ TextureImporter:
       bones: []
       spriteID: 9907f79fa6ce6cc48aff5552fe4c6c03
       internalID: 565600928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHealthBar_Frame
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616a8174c3e50af46bf9f5d1e5978e0c
+      internalID: -132564286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHealthBar_Fill
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 94
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6dadf7eb7dfc8439b4ce29bf4dea54
+      internalID: -1453668745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Timeline
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 23
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64df64fd97325046834880414f3df6b
+      internalID: -779891792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_1x_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197c48013726c444b9583268a6d69365
+      internalID: -1139863805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_timeline
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 64
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c6f456ec37d194092aa28fd3389b7b
+      internalID: -1778821352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_timelinefill
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 36
+        width: 62
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f438a466646343d499305dcfbb0559a5
+      internalID: 432089219
       vertices: []
       indices: 
       edges: []
@@ -615,8 +741,14 @@ TextureImporter:
       GUI_1x_1: -1098267559
       GUI_1x_2: -536587829
       GUI_1x_3: 870470853
+      GUI_1x_4: -1139863805
       HealthBar: 1576780637
       HealthBarFrame: 114883866
+      PlayerHealthBar_Fill: -1453668745
+      PlayerHealthBar_Frame: -132564286
+      Player_timeline: -1778821352
+      Player_timelinefill: 432089219
+      Timeline: -779891792
       achievement_content: -601727498
       achievement_title: -2048266322
       armor_icon: -1715758274
