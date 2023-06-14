@@ -13,11 +13,41 @@ namespace Entropy.IdlyIsekai
     {
         public static CombatManager Instance;
 
-        public int combatSpeed = 1;
-        [BoxGroup("Read Only")]  public List<Entity> entities = new List<Entity>();
+        [BoxGroup("Read Only")] [ReadOnly] public List<Entity> entities = new List<Entity>();
         [BoxGroup("Read Only")] [ReadOnly] public CombatState CombatState;
 
         [BoxGroup("Required")] public PlayerStatusBar playerStatusBar;
+        [BoxGroup("Required")] public Player player;
+        [BoxGroup("Required")] public Transform spawnParent;
+
+        public void SpawnEntity(GameObject gameObject)
+        {
+            GameObject go = Instantiate(gameObject, spawnParent);
+            Entity entity = go.GetComponent<Entity>();
+            if (entity == null) { Destroy(go); }
+            else { entities.Add(entity); Debug.Log("Testing"); }
+        }
+
+        public Entity GetNearestTarget()
+        {
+            for (int i = 0; i < entities.Count; i++)
+            {
+                if (entities[i].enabled) { return entities[i]; }
+            }
+            return null;
+        }
+
+        #region DungeonManager
+        [BoxGroup("Debug")] [SerializeField] private GameObject _enemyPrefab;
+        [BoxGroup("Debug")] [SerializeField] private int _spawnCount;
+        [BoxGroup("Debug")] [Button] private void SpawnEnemies()
+        {
+            for (int i = 0; i < _spawnCount; i++)
+            {
+                SpawnEntity(_enemyPrefab);
+            }
+        }
+        #endregion
 
         private void Awake()
         {
@@ -25,6 +55,7 @@ namespace Entropy.IdlyIsekai
             else { Destroy(gameObject); }
 
             CombatState = CombatState.Normal;
+            entities = new List<Entity>();
         }
 
         private void FixedUpdate()
@@ -33,8 +64,10 @@ namespace Entropy.IdlyIsekai
             {
                 for (int i = 0; i < entities.Count; i++)
                 {
+                    if(entities[i] == null) { entities.RemoveAt(i); }
                     entities[i].Tick((int)CombatState);
                 }
+                player.Tick((int)CombatState);
             }
         }
     }

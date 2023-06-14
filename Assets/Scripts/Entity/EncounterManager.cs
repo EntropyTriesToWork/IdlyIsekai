@@ -10,12 +10,21 @@ namespace Entropy.IdlyIsekai
     {
         public static EncounterManager Instance;
 
-        [FoldoutGroup("Read Only")] [ReadOnly] public List<Entity> currentEnemies = new List<Entity>();
+        public GameObject enemyPrefab;
+        public int spawnCount;
 
         private void Awake()
         {
             if (Instance == null) { Instance = this; }
             else { Destroy(gameObject); }
+        }
+
+        [Button] public void SpawnEnemies()
+        {
+            for (int i = 0; i < spawnCount; i++)
+            {
+                CombatManager.Instance.SpawnEntity(enemyPrefab);
+            }
         }
     }
 }

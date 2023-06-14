@@ -1121,8 +1121,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2944013872945268765}
   - component: {fileID: 1878714953660125267}
-  - component: {fileID: 7654787515450712866}
   - component: {fileID: 6329820183820757835}
+  - component: {fileID: 7654787515450712866}
   m_Layer: 5
   m_Name: Enemy
   m_TagString: Untagged
@@ -1167,18 +1167,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarFill: {fileID: 2944013871728079345}
   healthText: {fileID: 6929348137229803526}
-  initializeOnStart: 1
+  initializeOnStart: 0
   debugStartingHealth: 100
   statsPopup: {fileID: 2293743218228482515}
   healthbarPopup: {fileID: 3118455675520640024}
---- !u!222 &7654787515450712866
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2944013872945268753}
-  m_CullTransparentMesh: 1
 --- !u!114 &6329820183820757835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,6 +1186,15 @@ MonoBehaviour:
   _baseStats: {fileID: 11400000, guid: 0dd4175e07f334443be57999138964be, type: 2}
   timelineImage: {fileID: 1905982914341076888}
   timelineImageWidth: 24
+  healthBar: {fileID: 1878714953660125267}
+--- !u!222 &7654787515450712866
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944013872945268753}
+  m_CullTransparentMesh: 1
 --- !u!1 &3900973820505912263
 GameObject:
   m_ObjectHideFlags: 0

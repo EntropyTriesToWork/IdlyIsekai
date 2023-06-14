@@ -4,17 +4,10 @@ using UnityEngine;
 
 namespace Entropy.IdlyIsekai.Entities
 {
-    public class HealthComponent : MonoBehaviour, IDamageable
-    {
-        public DamageReport TakeDamage(DamageInfo damageInfo)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
-
     public interface IDamageable
     {
         public DamageReport TakeDamage(DamageInfo damageInfo);
+        public DamageReport DealDamage(DamageInfo damageInfo);
     }
 
     public struct DamageReport
