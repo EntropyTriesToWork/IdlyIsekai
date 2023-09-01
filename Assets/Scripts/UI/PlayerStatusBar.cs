@@ -13,7 +13,7 @@ namespace Entropy.IdlyIsekai.UI
         {
             _currentHealth += healthChangeValue;
 
-            healthBarFill.fillAmount = Mathf.Floor((float)_currentHealth / _maxHealth * 94) / 94f;
+            healthBarFill.fillAmount = Mathf.Floor((float)_currentHealth / _maxHealth * 94) / 94f; //94 because that's the number of pixels in length of the health bar
             healthText.SetText(_currentHealth.ToString());
             _timeSinceHealthChange = Time.realtimeSinceStartup;
         }

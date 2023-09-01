@@ -1267,7 +1267,6 @@ GameObject:
   m_Component:
   - component: {fileID: 236959719}
   - component: {fileID: 236959721}
-  - component: {fileID: 236959720}
   m_Layer: 5
   m_Name: Stat_Health
   m_TagString: Untagged
@@ -1297,21 +1296,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 56, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &236959720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236959718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b906b38b0c5e04282d89cc8354794e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Health
-  description: Looking mighty thicc yo-
-  TooltipSize: 150
 --- !u!222 &236959721
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5111,7 +5095,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 16, y: 16}
+  m_SizeDelta: {x: 16, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194436324
 MonoBehaviour:
@@ -5133,7 +5117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2012469447, guid: fb2aacda8d7a2624b8f5604c43c008b2, type: 3}
+  m_Sprite: {fileID: 1740608797, guid: 502cd179a3150b148bc2f3cb375fb913, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6143,6 +6127,7 @@ GameObject:
   - component: {fileID: 1471111391}
   - component: {fileID: 1471111390}
   - component: {fileID: 1471111389}
+  - component: {fileID: 1471111392}
   m_Layer: 5
   m_Name: StatIcon
   m_TagString: Untagged
@@ -6228,6 +6213,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471111387}
   m_CullTransparentMesh: 1
+--- !u!114 &1471111392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471111387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b906b38b0c5e04282d89cc8354794e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Health
+  description: Looking mighty thicc yo-
+  TooltipSize: 150
 --- !u!1 &1477596800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,6 +7160,7 @@ GameObject:
   - component: {fileID: 1707882466}
   - component: {fileID: 1707882465}
   - component: {fileID: 1707882464}
+  - component: {fileID: 1707882467}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7304,6 +7305,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707882462}
   m_CullTransparentMesh: 1
+--- !u!114 &1707882467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707882462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b906b38b0c5e04282d89cc8354794e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 
+  description: 
+  TooltipSize: 100
 --- !u!1 &1725541171
 GameObject:
   m_ObjectHideFlags: 0
