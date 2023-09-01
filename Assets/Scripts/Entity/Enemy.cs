@@ -11,6 +11,11 @@ namespace Entropy.IdlyIsekai.Entities
             Destroy(gameObject);
         }
 
+        public virtual void PlayerRewardsOnDeath()
+        {
+
+        }
+
         public override void OnTimeLineComplete()
         {
             

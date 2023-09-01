@@ -64,8 +64,8 @@ namespace Entropy.IdlyIsekai
             {
                 for (int i = 0; i < entities.Count; i++)
                 {
-                    if(entities[i] == null) { entities.RemoveAt(i); }
-                    entities[i].Tick((int)CombatState);
+                    if (entities[i] == null) { entities.RemoveAt(i); }
+                    else { entities[i].Tick((int)CombatState); }
                 }
                 player.Tick((int)CombatState);
             }

@@ -1,3 +1,4 @@
+using Entropy.IdlyIsekai.Numbers;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -46,6 +47,11 @@ namespace Entropy.IdlyIsekai.UI
             _currentHealth = maxHealth;
             _maxHealth = maxHealth;
             UpdateHealthBar(0);
+        }
+
+        [Button] public void DebugShowHealth()
+        {
+            Debug.Log(NumberProcessor.NumberToDisplayString(_currentHealth));
         }
     }
 }

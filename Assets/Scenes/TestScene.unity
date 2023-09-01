@@ -7810,7 +7810,7 @@ MonoBehaviour:
   healthBarFill: {fileID: 1327157771}
   healthText: {fileID: 2062973607}
   initializeOnStart: 1
-  debugStartingHealth: 100
+  debugStartingHealth: 1000
 --- !u!1 &1812421518
 GameObject:
   m_ObjectHideFlags: 0
