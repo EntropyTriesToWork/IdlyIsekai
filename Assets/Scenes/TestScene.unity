@@ -1267,6 +1267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236959719}
   - component: {fileID: 236959721}
+  - component: {fileID: 236959722}
   m_Layer: 5
   m_Name: Stat_Health
   m_TagString: Untagged
@@ -1304,6 +1305,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236959718}
   m_CullTransparentMesh: 1
+--- !u!114 &236959722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236959718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b906b38b0c5e04282d89cc8354794e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Health
+  description: Looking mighty thicc yo-
+  TooltipSize: 150
 --- !u!1 &254915109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +3961,9 @@ MonoBehaviour:
   entities:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   CombatState: 0
   playerStatusBar: {fileID: 1810747601}
   player: {fileID: 1810747600}
@@ -6127,7 +6146,6 @@ GameObject:
   - component: {fileID: 1471111391}
   - component: {fileID: 1471111390}
   - component: {fileID: 1471111389}
-  - component: {fileID: 1471111392}
   m_Layer: 5
   m_Name: StatIcon
   m_TagString: Untagged
@@ -6213,21 +6231,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471111387}
   m_CullTransparentMesh: 1
---- !u!114 &1471111392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471111387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b906b38b0c5e04282d89cc8354794e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Health
-  description: Looking mighty thicc yo-
-  TooltipSize: 150
 --- !u!1 &1477596800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,7 +7163,6 @@ GameObject:
   - component: {fileID: 1707882466}
   - component: {fileID: 1707882465}
   - component: {fileID: 1707882464}
-  - component: {fileID: 1707882467}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7305,21 +7307,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707882462}
   m_CullTransparentMesh: 1
---- !u!114 &1707882467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707882462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b906b38b0c5e04282d89cc8354794e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: 
-  description: 
-  TooltipSize: 100
 --- !u!1 &1725541171
 GameObject:
   m_ObjectHideFlags: 0
@@ -7720,6 +7707,7 @@ GameObject:
   - component: {fileID: 1810747598}
   - component: {fileID: 1810747600}
   - component: {fileID: 1810747601}
+  - component: {fileID: 1810747602}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7827,6 +7815,30 @@ MonoBehaviour:
   healthText: {fileID: 2062973607}
   initializeOnStart: 1
   debugStartingHealth: 1000
+--- !u!114 &1810747602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810747596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59160b5a65312b24da4a04dcf341346a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSprites:
+  - {fileID: -726266613, guid: 502cd179a3150b148bc2f3cb375fb913, type: 3}
+  runningSprites:
+  - {fileID: -1729429649, guid: 502cd179a3150b148bc2f3cb375fb913, type: 3}
+  - {fileID: -1950563909, guid: 502cd179a3150b148bc2f3cb375fb913, type: 3}
+  - {fileID: 6741161, guid: 502cd179a3150b148bc2f3cb375fb913, type: 3}
+  - {fileID: -1950563909, guid: 502cd179a3150b148bc2f3cb375fb913, type: 3}
+  fps: 4
+  loop: 1
+  destroyOnEnd: 0
+  pauseOnEnd: 0
+  AnimState: 0
 --- !u!1 &1812421518
 GameObject:
   m_ObjectHideFlags: 0
